@@ -70,20 +70,19 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
   }
   
-  /* header */
-  
-  header nav {
-	display: inline-block;
-	width: 691px;
-	vertical-align: top;
-	margin-top: 35px;
-  }
+    header nav {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-self: auto;
+	}
   
   header nav a {
-	margin-right: 65px;
-	font-size: 14px;
+	display: flex;
+	justify-content:space-around ;	
 	color: gray;
 	text-decoration: none;
+  	margin-top: 35px;
   }
   
   header nav a:hover {
@@ -91,11 +90,11 @@ h1, h2, h3, h4, h5 {
   }
   
   header nav a:first-child {
-	margin-left: 0;
+	display: flex;
   }
   
   header nav a:last-child {
-	margin-right: 0;
+	display: flex;
   }
   
   header .logo {
@@ -105,8 +104,8 @@ h1, h2, h3, h4, h5 {
   /* cta */
   
   .cta .cta-text {
-	display: inline-block;
-	vertical-align: top;
+	display: flex;
+	align-items: center ;
 	font-size: 77px;
 	margin-top: 120px;
 	text-align: center;
@@ -115,7 +114,7 @@ h1, h2, h3, h4, h5 {
   
   .cta .cta-text button {
 	background: white;
-	vertical-align: top;
+	align-items: center;
 	margin-top: 6px;
 	padding: 8px 44px;
 	font-size: 17px;
@@ -129,7 +128,7 @@ h1, h2, h3, h4, h5 {
   }
   
   .cta img {
-	display: inline-block;
+	display: flex;
 	margin-top: 69px;
   }
   
@@ -145,7 +144,8 @@ h1, h2, h3, h4, h5 {
   
   .main-content .top-content .text-content {
 	width: 410px;
-	display: inline-block;
+	display: flex-block;
+	flex-wrap: nowrap;
 	margin-right: 34px;
   }
   
@@ -187,3 +187,44 @@ h1, h2, h3, h4, h5 {
 	text-align: center;
 	font-size: 14px;
   }
+
+  /* services page*/
+  .middle-content {
+	border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+  }
+
+  .services-tasks {
+	width: 400px;
+	Height: 180px;
+	background: #f2f4f6;
+	border: 1px solid black;
+	margin: 20px;
+	text-align: left;
+	padding: 1%;
+  }
+
+  .middle-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-center;
+	justify-content: space-around;
+  }
+
+  /*round button corners?*/
+  .learn-more {
+	  margin-top: 10px;
+	  margin-left: 3px;
+	  border: 1px solid black;
+	  background: white;
+	  border-radius: 4px;
+  }
+
+
+  .bottom-facts {
+	margin-top: 57px;
+	border-top: 2px solid black;
+	padding: 30px 10px 0;
+  }
+
