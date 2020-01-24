@@ -70,16 +70,17 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
   }
   
+  
     header nav {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	flex-direction: row;
-	align-self: auto;
+	align-items: center;
 	}
   
   header nav a {
 	display: flex;
-	justify-content:space-around ;	
+	justify-content:space-between ;	
 	color: gray;
 	text-decoration: none;
   	margin-top: 35px;
@@ -89,32 +90,22 @@ h1, h2, h3, h4, h5 {
 	text-decoration: underline;
   }
   
-  header nav a:first-child {
-	display: flex;
-  }
-  
-  header nav a:last-child {
-	display: flex;
-  }
-  
-  header .logo {
-	margin-top: 25px;
-  }
   
   /* cta */
   
   .cta .cta-text {
 	display: flex;
-	align-items: center ;
+	align-items: center;
 	font-size: 77px;
 	margin-top: 120px;
-	text-align: center;
 	padding: 0px 75px;
+	text-align: center;
+
   }
   
   .cta .cta-text button {
 	background: white;
-	align-items: center;
+	align-items: flex-end;
 	margin-top: 6px;
 	padding: 8px 44px;
 	font-size: 17px;
@@ -129,6 +120,7 @@ h1, h2, h3, h4, h5 {
   
   .cta img {
 	display: flex;
+	justify-content: flex-end;
 	margin-top: 69px;
   }
   
@@ -189,9 +181,13 @@ h1, h2, h3, h4, h5 {
   }
 
   /* services page*/
+.services-description {
+	margin-top: 30px;
+}
+
   .middle-content {
 	border-top: 1px solid black;
-	margin-top: 76px;
+	margin-top: 40px;
 	padding-top: 39px;
   }
 
@@ -212,7 +208,6 @@ h1, h2, h3, h4, h5 {
 	justify-content: space-around;
   }
 
-  /*round button corners?*/
   .learn-more {
 	  margin-top: 10px;
 	  margin-left: 3px;
@@ -221,10 +216,25 @@ h1, h2, h3, h4, h5 {
 	  border-radius: 4px;
   }
 
-
+  
   .bottom-facts {
-	margin-top: 57px;
-	border-top: 2px solid black;
-	padding: 30px 10px 0;
+	display: flex;
+	padding: 50px 10px 50px 0;
+	justify-content: space-around;
+  }
+
+  .bottom-facts .bottom-text {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap; 
+	flex-direction: column;
+	margin: 0 10px 10px 0;
+	padding-top: 0;
+  }
+
+  .bottom-facts .bottom-text li {
+	list-style-type: square;
+	list-style-position: inside;
+	padding: 5px;
   }
 
